@@ -12,7 +12,7 @@
     { "label": "Visites de l'école", "valeur": "chaque mercredi, 9 h – 12 h" }
   ],
   "aPropos": [
-    "Implanté au quartier Nsazomo à Yaoundé VII, le Collège Bilingue Entrepreneurial MEKOUJA est un établissement privé d'enseignement général et technique qui accompagne les élèves de la petite section de maternelle jusqu'en classe de Terminale. Notre conviction est que chaque enfant porte en lui un potentiel qui mérite d'être révélé par un encadrement rigoureux, bienveillant et adapté à son rythme.",
+    "Implanté au quartier Nsazomo à Yaoundé, le Collège Bilingue Entrepreneurial MEKOUJA est un établissement privé d'enseignement général et technique qui accompagne les élèves de la petite section de maternelle jusqu'en classe de Terminale. Notre conviction est que chaque enfant porte en lui un potentiel qui mérite d'être révélé par un encadrement rigoureux, bienveillant et adapté à son rythme.",
     "Dès la maternelle et tout au long du primaire, nos élèves bénéficient d'un bilinguisme intégral : le français et l'anglais sont enseignés et pratiqués à parité dans toutes les disciplines. Cette immersion précoce prépare chaque enfant à évoluer avec aisance dans les deux sous-systèmes éducatifs camerounais et à s'ouvrir sur le monde.",
     "Au collège, MEKOUJA va plus loin avec des filières techniques pratiques en Maçonnerie et en Coupe-Couture, et des cours d'entrepreneuriat intégrés au programme. Ces innovations permettent aux élèves d'acquérir un vrai savoir-faire métier, de développer leur esprit d'initiative et de s'insérer directement dans le monde du travail — avec ou sans poursuite d'études supérieures."
   ],
@@ -24,7 +24,7 @@
     { "titre": "Encadrement bienveillant", "texte": "Effectifs maîtrisés, équipes pédagogiques stables et communication régulière avec les familles pour un suivi attentif à chaque étape." }
   ],
   "chiffres": [
-    { "valeur": "700+", "label": "élèves accompagnés" },
+    { "valeur": "800+", "label": "élèves accompagnés" },
     { "valeur": "30", "label": "élèves max. par classe" },
     { "valeur": "2", "label": "langues d'enseignement, dès la maternelle" },
     { "valeur": "94 %", "label": "de réussite aux examens officiels (2025)" },
@@ -36,5 +36,54 @@
     "telephones": ["+237 6 55 00 00 00", "+237 6 44 00 00 00"],
     "emails": ["info@mekouja.cm", "admissions@mekouja.cm"],
     "horaires": ["Lundi – vendredi : 7 h 30 – 15 h 30", "Samedi : 9 h 00 – 12 h 00"]
-  }
+  },
+  "faq": [
+    {
+      "q": "Quels documents faut-il fournir pour une première inscription ?",
+      "r": "Pour constituer un dossier, il faut : les bulletins des deux dernières années, un acte de naissance, un certificat de scolarité de l'établissement précédent, 4 photos d'identité 4×4 et la fiche de demande disponible à l'accueil. Pour la 6e / Form 1, un concours d'entrée est organisé en juillet."
+    },
+    {
+      "q": "L'établissement est-il reconnu par le MINESEC ?",
+      "r": "Oui, le Collège Bilingue Entrepreneurial MEKOUJA est un établissement privé légalement agréé par le Ministère des Enseignements Secondaires du Cameroun. Nos élèves composent tous les examens officiels (BEPC, Probatoire, Baccalauréat) dans les meilleures conditions."
+    },
+    {
+      "q": "Comment connaître les frais de scolarité ?",
+      "r": "Les frais varient selon le cycle (maternelle, primaire, collège, lycée) et la classe. Pour les détails tarifaires actualisés, contactez-nous par téléphone, WhatsApp ou passez à l'accueil du lundi au vendredi de 7h30 à 15h30."
+    },
+    {
+      "q": "Le bilinguisme s'applique-t-il à toutes les matières ?",
+      "r": "Oui, de la maternelle à la fin du primaire, toutes les disciplines sont enseignées en français et en anglais à parité — un enseignant par langue. Au collège et au lycée, les deux sous-systèmes coexistent avec des classes francophones et anglophones."
+    },
+    {
+      "q": "Y a-t-il une cantine ou des études surveillées ?",
+      "r": "Oui, l'établissement dispose d'une cantine scolaire et d'un service d'études dirigées le soir pour les élèves du primaire et du secondaire. Ces services sont optionnels et nécessitent une inscription séparée."
+    },
+    {
+      "q": "Peut-on visiter l'école avant de s'inscrire ?",
+      "r": "Absolument. Des visites guidées sont organisées chaque mercredi de 9h à 12h. Vous rencontrerez les responsables pédagogiques, visiterez les salles de classe et les ateliers techniques, et pourrez poser toutes vos questions. Aucune réservation n'est nécessaire."
+    }
+  ],
+  "temoignages": [
+    {
+      "initiales": "MN",
+      "couleur": "#1E48C0",
+      "nom": "Marie-Claire N.",
+      "role": "Mère d'élève — Terminale C",
+      "texte": "Mon fils a intégré MEKOUJA en 6e et vient d'obtenir son Baccalauréat C avec mention. L'encadrement est sérieux, les professeurs connaissent chaque élève par son nom. Je recommande sans hésiter."
+    },
+    {
+      "initiales": "PF",
+      "couleur": "#C21E30",
+      "nom": "Paul-Henri F.",
+      "role": "Père d'élève — Filière Maçonnerie",
+      "texte": "Mon fils était en difficulté dans le cursus classique. Depuis qu'il est en filière Maçonnerie à MEKOUJA, il est épanoui — il apprend un vrai métier tout en continuant ses études générales. C'est exactement ce qu'il lui fallait."
+    },
+    {
+      "initiales": "AT",
+      "couleur": "#F59E0B",
+      "nom": "Astride T.",
+      "role": "Mère d'élève — Primaire CM1",
+      "texte": "Le bilinguisme intégral dès le CP est une vraie différence. Ma fille parle couramment français et anglais à 9 ans. Les enseignantes sont dévouées et les parents reçoivent les bulletins chaque mois. Très satisfaite."
+    }
+  ]
 }
