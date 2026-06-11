@@ -27,12 +27,12 @@
     { "valeur": "800+", "label": "élèves accompagnés" },
     { "valeur": "30", "label": "élèves max. par classe" },
     { "valeur": "2", "label": "langues d'enseignement, dès la maternelle" },
-    { "valeur": "94 %", "label": "de réussite aux examens officiels (2025)" },
+    { "valeur": "95 %", "label": "de réussite aux examens officiels (2025)" },
     { "valeur": "2", "label": "filières techniques pratiques au collège" },
-    { "valeur": "15+", "label": "années d'expérience à Yaoundé" }
+    { "valeur": "13+", "label": "années d'expérience à Yaoundé" }
   ],
   "contact": {
-    "adresse": ["Quartier Nsazomo, Yaoundé VII", "Yaoundé — Cameroun"],
+    "adresse": ["Quartier Nsazomo", "Yaoundé — Cameroun"],
     "telephones": ["+237 6 55 00 00 00", "+237 6 44 00 00 00"],
     "emails": ["info@mekouja.cm", "admissions@mekouja.cm"],
     "horaires": ["Lundi – vendredi : 7 h 30 – 15 h 30", "Samedi : 9 h 00 – 12 h 00"]
