@@ -1,0 +1,40 @@
+{
+  "nom": "MEKOUJA",
+  "sigle": "M",
+  "ville": "Yaoundé",
+  "slogan": ["Former le citoyen bilingue,", "préparer le professionnel de ", "demain"],
+  "accroche": "Le Complexe Scolaire Bilingue MEKOUJA, situé à Nsazomo (Yaoundé VII), accueille les élèves de la maternelle à la Terminale. Bilinguisme intégral, filières techniques pratiques et cours d'entrepreneuriat : nous formons des élèves complets, prêts à s'insérer dans la société et dans le monde du travail.",
+  "niveaux": "Maternelle — Terminale",
+  "aRetenir": [
+    { "label": "Rentrée 2026–2027", "valeur": "lundi 7 septembre 2026" },
+    { "label": "Concours d'entrée en 6e / Form 1", "valeur": "samedi 19 juillet 2026" },
+    { "label": "Dépôt des dossiers", "valeur": "ouvert du 2 juin au 29 août 2026" },
+    { "label": "Visites de l'école", "valeur": "chaque mercredi, 9 h – 12 h" }
+  ],
+  "aPropos": [
+    "Implanté au quartier Nsazomo à Yaoundé VII, le Complexe Scolaire Bilingue MEKOUJA est un établissement privé d'enseignement général et technique qui accompagne les élèves de la petite section de maternelle jusqu'en classe de Terminale. Notre conviction est que chaque enfant porte en lui un potentiel qui mérite d'être révélé par un encadrement rigoureux, bienveillant et adapté à son rythme.",
+    "Dès la maternelle et tout au long du primaire, nos élèves bénéficient d'un bilinguisme intégral : le français et l'anglais sont enseignés et pratiqués à parité dans toutes les disciplines. Cette immersion précoce prépare chaque enfant à évoluer avec aisance dans les deux sous-systèmes éducatifs camerounais et à s'ouvrir sur le monde.",
+    "Au collège, MEKOUJA va plus loin avec des filières techniques pratiques en Maçonnerie et en Coupe-Couture, et des cours d'entrepreneuriat intégrés au programme. Ces innovations permettent aux élèves d'acquérir un vrai savoir-faire métier, de développer leur esprit d'initiative et de s'insérer directement dans le monde du travail — avec ou sans poursuite d'études supérieures."
+  ],
+  "valeurs": [
+    { "titre": "Bilinguisme intégral", "texte": "Français et anglais enseignés à parité dès la petite section, dans toutes les matières, pour une maîtrise réelle des deux langues officielles." },
+    { "titre": "Excellence académique", "texte": "Des programmes officiels renforcés, des évaluations régulières et un suivi individualisé pour tirer le meilleur de chaque élève." },
+    { "titre": "Insertion professionnelle", "texte": "Des filières techniques pratiques au collège — Maçonnerie et Coupe-Couture — pour acquérir un métier concret et intégrer le monde du travail avec confiance." },
+    { "titre": "Esprit entrepreneurial", "texte": "Des cours d'entrepreneuriat intégrés au programme pour développer la créativité, l'initiative et les bases de la gestion de projet dès le collège." },
+    { "titre": "Encadrement bienveillant", "texte": "Effectifs maîtrisés, équipes pédagogiques stables et communication régulière avec les familles pour un suivi attentif à chaque étape." }
+  ],
+  "chiffres": [
+    { "valeur": "700+", "label": "élèves accompagnés" },
+    { "valeur": "30", "label": "élèves max. par classe" },
+    { "valeur": "2", "label": "langues d'enseignement, dès la maternelle" },
+    { "valeur": "94 %", "label": "de réussite aux examens officiels (2025)" },
+    { "valeur": "2", "label": "filières techniques pratiques au collège" },
+    { "valeur": "15+", "label": "années d'expérience à Yaoundé" }
+  ],
+  "contact": {
+    "adresse": ["Quartier Nsazomo, Yaoundé VII", "Yaoundé — Cameroun"],
+    "telephones": ["+237 6 55 00 00 00", "+237 6 44 00 00 00"],
+    "emails": ["info@mekouja.cm", "admissions@mekouja.cm"],
+    "horaires": ["Lundi – vendredi : 7 h 30 – 15 h 30", "Samedi : 9 h 00 – 12 h 00"]
+  }
+}

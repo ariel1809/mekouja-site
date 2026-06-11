@@ -1,0 +1,119 @@
+{
+  "cycles": [
+    {
+      "id": "maternelle",
+      "onglet": "Maternelle",
+      "titre": "Maternelle (3 – 5 ans)",
+      "description": "Éveil en bilinguisme intégral dès la première année : le français et l'anglais sont pratiqués quotidiennement à travers le jeu, le chant, la motricité et les activités d'éveil. Chaque section est encadrée par une enseignante et une assistante.",
+      "badge": { "texte": "Admission sur étude de dossier", "type": "dossier" },
+      "classes": [
+        {
+          "nom": "Petite Section",
+          "detail": "3 ans",
+          "modalites": ["Effectif : 25 élèves max.", "Horaires : 7 h 30 – 12 h 30", "Éveil bilingue français / anglais intégral", "Sieste, goûter et motricité encadrés"]
+        },
+        {
+          "nom": "Moyenne Section",
+          "detail": "4 ans",
+          "modalites": ["Effectif : 25 élèves max.", "Horaires : 7 h 30 – 12 h 30", "Graphisme, pré-lecture et comptines bilingues", "Ateliers de motricité fine et expression artistique"]
+        },
+        {
+          "nom": "Grande Section",
+          "detail": "5 ans",
+          "modalites": ["Effectif : 28 élèves max.", "Horaires : 7 h 30 – 13 h", "Initiation lecture, écriture et calcul en deux langues", "Préparation à l'entrée au primaire bilingue"]
+        }
+      ]
+    },
+    {
+      "id": "primaire",
+      "onglet": "Primaire",
+      "titre": "Primaire (SIL / Class 1 — CM2 / Class 6)",
+      "description": "Le bilinguisme intégral se poursuit sur tout le cycle primaire : chaque matière est enseignée en français et en anglais. Les élèves préparent les examens officiels des deux sous-systèmes avec un soutien scolaire intégré et des bulletins mensuels transmis aux familles.",
+      "badge": { "texte": "Admission sur dossier + test de niveau", "type": "dossier" },
+      "classes": [
+        {
+          "nom": "SIL & CP",
+          "detail": "Class 1 – 2",
+          "modalites": ["Effectif : 30 élèves max.", "Horaires : 7 h 30 – 14 h 30", "Lecture, écriture, numération en deux langues", "Immersion anglais / français renforcée quotidiennement"]
+        },
+        {
+          "nom": "CE1 & CE2",
+          "detail": "Class 3 – 4",
+          "modalites": ["Effectif : 30 élèves max.", "Horaires : 7 h 30 – 14 h 30", "Consolidation des fondamentaux bilingues", "Initiation à l'informatique et aux sciences"]
+        },
+        {
+          "nom": "CM1 & CM2",
+          "detail": "Class 5 – 6",
+          "modalites": ["Effectif : 30 élèves max.", "Horaires : 7 h 30 – 15 h", "Préparation CEP / FSLC + concours d'entrée en 6e", "Études dirigées le soir (option)"]
+        }
+      ]
+    },
+    {
+      "id": "premier-cycle",
+      "onglet": "Collège — Général",
+      "titre": "Collège général bilingue (6e / Form 1 — 3e / Form 5)",
+      "description": "Un socle solide en sciences, lettres et langues jusqu'au BEPC et au GCE Ordinary Level, enrichi par des cours d'entrepreneuriat intégrés. L'enseignement reste bilingue, avec devoirs surveillés hebdomadaires et bulletin numérique consultable par les parents.",
+      "badge": { "texte": "6e : concours · autres niveaux : dossier", "type": "mixte" },
+      "classes": [
+        {
+          "nom": "6e",
+          "detail": "Form 1",
+          "modalites": ["Entrée sur concours (juillet)", "Effectif : 30 élèves max.", "Horaires : 7 h 30 – 15 h 30", "LV2 au choix : allemand ou espagnol dès la 6e", "Initiation à l'entrepreneuriat"]
+        },
+        {
+          "nom": "5e & 4e",
+          "detail": "Form 2 – 3",
+          "modalites": ["Admission sur étude de dossier", "Effectif : 30 élèves max.", "Horaires : 7 h 30 – 15 h 30", "Cours d'entrepreneuriat : créativité et projet", "Clubs scientifiques, artistiques et sportifs"]
+        },
+        {
+          "nom": "3e",
+          "detail": "Form 4 – 5",
+          "modalites": ["Admission sur étude de dossier", "Effectif : 30 élèves max.", "Préparation intensive BEPC / GCE O-Level", "Entrepreneuriat : élaboration d'un mini-projet", "Examens blancs trimestriels et orientation post-3e"]
+        }
+      ]
+    },
+    {
+      "id": "techniques",
+      "onglet": "Collège — Technique",
+      "titre": "Filières Techniques — Maçonnerie & Coupe-Couture",
+      "description": "Deux formations pratiques et certifiantes dès le collège, menées en parallèle d'une éducation générale bilingue. L'objectif : permettre à chaque élève d'acquérir un métier concret et de s'insérer directement dans le monde du travail à l'issue de sa formation.",
+      "badge": { "texte": "Admission sur étude de dossier", "type": "dossier" },
+      "classes": [
+        {
+          "nom": "Maçonnerie",
+          "detail": "3 ans · Collège",
+          "modalites": ["Ateliers pratiques sur chantiers-école", "Coffrage, ferraillage, pose de carrelage, enduits", "Lecture de plans et métrés", "Préparation au CAP Maçonnerie"]
+        },
+        {
+          "nom": "Coupe & Couture",
+          "detail": "3 ans · Collège",
+          "modalites": ["Atelier de couture entièrement équipé", "Patronage, coupe, confection et retouche", "Création et valorisation des productions", "Préparation au CAP Coupe-Couture"]
+        }
+      ]
+    },
+    {
+      "id": "second-cycle",
+      "onglet": "Lycée",
+      "titre": "Lycée (2nde / Lower Sixth — Terminale / Upper Sixth)",
+      "description": "Des séries adaptées à chaque projet : A (lettres et sciences humaines), C (mathématiques et physique), D (sciences naturelles), jusqu'au Baccalauréat camerounais et au GCE Advanced Level. Les cours d'entrepreneuriat se poursuivent au lycée vers des projets concrets.",
+      "badge": { "texte": "2nde C : concours · autres séries : dossier", "type": "mixte" },
+      "classes": [
+        {
+          "nom": "2nde",
+          "detail": "séries A · C · D",
+          "modalites": ["2nde C : entrée sur concours", "2nde A & D : étude de dossier", "Effectif : 30 élèves max.", "Entrepreneuriat : identification d'opportunités"]
+        },
+        {
+          "nom": "1re",
+          "detail": "séries A · C · D",
+          "modalites": ["Admission sur étude de dossier", "Effectif : 30 élèves max.", "Préparation au Probatoire", "Travaux pratiques en laboratoire de sciences", "Entrepreneuriat : construction d'un business plan"]
+        },
+        {
+          "nom": "Terminale",
+          "detail": "séries A · C · D",
+          "modalites": ["Admission sur dossier (places limitées)", "Effectif : 30 élèves max.", "Préparation Baccalauréat / GCE A-Level", "Projet entrepreneurial de fin d'études", "Accompagnement à l'orientation post-bac"]
+        }
+      ]
+    }
+  ]
+}

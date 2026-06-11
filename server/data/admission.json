@@ -1,0 +1,46 @@
+{
+  "voies": [
+    {
+      "id": "concours",
+      "numero": "Voie 1",
+      "titre": "Le concours d'entrée",
+      "description": "Obligatoire pour l'entrée en 6e / Form 1 et pour la série scientifique de 2nde C. Il évalue les acquis en mathématiques, en français et en anglais sur des épreuves écrites d'environ 3 heures.",
+      "etapes": [
+        "Retirer le dossier d'inscription au concours à l'accueil de l'école ou le demander par e-mail (frais : 5 000 FCFA).",
+        "Déposer le dossier complet au plus tard une semaine avant la date du concours.",
+        "Composer le jour du concours — épreuves écrites le matin, durée totale d'environ 3 heures.",
+        "Consulter les résultats affichés à l'école et publiés sur cette page sous 10 jours ouvrables.",
+        "En cas d'admission, finaliser l'inscription dans un délai de 15 jours pour réserver votre place."
+      ],
+      "note": "Prochaine session : samedi 19 juillet 2026, à 8 h, dans nos locaux à Nsazomo. Se munir de sa convocation et d'une pièce d'identité."
+    },
+    {
+      "id": "dossier",
+      "numero": "Voie 2",
+      "titre": "L'étude de dossier",
+      "description": "Pour la maternelle, le primaire, les filières techniques et la majorité des classes du secondaire. La commission d'admission examine le parcours scolaire et, au primaire, fait passer un court test de niveau.",
+      "etapes": [
+        "Constituer le dossier : bulletins des deux dernières années, acte de naissance, certificat de scolarité, 4 photos 4×4 et fiche de demande remplie.",
+        "Déposer le dossier à l'accueil (lundi – vendredi, 8 h – 15 h ; samedi, 9 h – 12 h) ou l'envoyer par e-mail en un seul PDF à admissions@mekouja.cm.",
+        "Participer à un entretien famille-direction, fixé sous une semaine après le dépôt du dossier.",
+        "Recevoir la réponse de la commission sous 7 jours ouvrables après l'entretien.",
+        "En cas d'avis favorable, finaliser l'inscription pour réserver la place de votre enfant."
+      ],
+      "note": "Les dossiers sont traités au fil de l'eau, dans la limite des places disponibles. Nous vous conseillons de déposer tôt pour garantir une place."
+    }
+  ],
+  "recapitulatif": {
+    "titre": "Quelle voie pour quelle classe ?",
+    "sousTitre": "Récapitulatif par niveau — année scolaire 2026–2027",
+    "lignes": [
+      { "classe": "Maternelle (PS – GS)", "voie": "Étude de dossier", "type": "dossier", "pieces": "Acte de naissance, carnet de vaccination, fiche de demande", "periode": "Juin – août" },
+      { "classe": "Primaire (SIL – CM2 / Class 1 – 6)", "voie": "Dossier + test de niveau", "type": "dossier", "pieces": "Bulletins, certificat de scolarité, test lecture et calcul (30 min)", "periode": "Juin – août" },
+      { "classe": "6e / Form 1", "voie": "Concours", "type": "concours", "pieces": "Épreuves de mathématiques, français et anglais", "periode": "19 juillet 2026" },
+      { "classe": "5e – 3e / Form 2 – 5", "voie": "Étude de dossier", "type": "dossier", "pieces": "Bulletins des 2 dernières années, entretien famille-direction", "periode": "Juin – août" },
+      { "classe": "Filières Techniques (Maçonnerie, Coupe-Couture)", "voie": "Étude de dossier", "type": "dossier", "pieces": "Bulletins, fiche de demande, entretien d'orientation", "periode": "Juin – août" },
+      { "classe": "2nde C", "voie": "Concours", "type": "concours", "pieces": "Épreuves de mathématiques et sciences physiques", "periode": "19 juillet 2026" },
+      { "classe": "2nde A & D", "voie": "Étude de dossier", "type": "dossier", "pieces": "Relevé BEPC / GCE O-Level, bulletins de 3e, entretien", "periode": "Juillet – août" },
+      { "classe": "1re & Terminale (toutes séries)", "voie": "Étude de dossier", "type": "dossier", "pieces": "Bulletins, relevé Probatoire le cas échéant, entretien", "periode": "Juillet – août" }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "college-la-seve",
+  "version": "1.0.0",
+  "description": "Site web full-stack du Collège Bilingue La Sève — React + Express",
+  "type": "module",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client",
+    "dev": "concurrently -n SERVEUR,CLIENT -c green,yellow \"npm run server\" \"npm run client\"",
+    "server": "node server/index.js",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "cross-env NODE_ENV=production node server/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
