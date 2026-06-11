@@ -224,7 +224,7 @@ h1 .souligne svg {
 h1 .souligne path {
   fill:none; stroke:var(--rouge); stroke-width:4.5; stroke-linecap:round;
   stroke-dasharray:600; stroke-dashoffset:600;
-  animation:trace 1.2s .6s ease forwards;
+  animation:trace 1.2s 1.15s ease forwards;
 }
 @keyframes trace { to{stroke-dashoffset:0} }
 .hero p.lead {
@@ -770,9 +770,158 @@ footer::after {
   40% { box-shadow:0 4px 20px rgba(37,211,102,.4), 0 0 0 10px rgba(37,211,102,.1) }
 }
 
-/* ===== REVEAL ===== */
-.reveal { opacity:0; transform:translateY(28px); transition:opacity .65s ease, transform .65s ease }
-.reveal.vu { opacity:1; transform:none }
+/* ===== SCROLL PROGRESS ===== */
+.scroll-progress {
+  position:fixed; top:0; left:0; right:0; height:3px; z-index:300;
+  background:linear-gradient(90deg, var(--bleu-vif), var(--rouge) 55%, var(--or));
+  transform:scaleX(0); transform-origin:left;
+  pointer-events:none;
+}
+
+/* ===== HERO — TITRE MOT PAR MOT ===== */
+.mot-wrap {
+  display:inline-block; overflow:hidden; vertical-align:top;
+  padding-bottom:.14em; margin-bottom:-.14em;
+}
+.mot {
+  display:inline-block; transform:translateY(115%);
+  animation:mot-up .75s cubic-bezier(.16,1,.3,1) forwards;
+}
+@keyframes mot-up { to { transform:none } }
+
+/* Pastille pulsante dans l'eyebrow */
+.eyebrow-pulse {
+  width:7px; height:7px; border-radius:50%; background:var(--or); flex:none;
+  box-shadow:0 0 0 0 rgba(245,158,11,.5);
+  animation:eyebrow-ping 2.2s ease-out infinite;
+}
+@keyframes eyebrow-ping {
+  0%   { box-shadow:0 0 0 0 rgba(245,158,11,.5) }
+  70%  { box-shadow:0 0 0 9px rgba(245,158,11,0) }
+  100% { box-shadow:0 0 0 0 rgba(245,158,11,0) }
+}
+
+/* Décorations géométriques supplémentaires */
+.hero-deco { transition:transform .6s cubic-bezier(.16,1,.3,1) }
+.deco-anneau {
+  position:absolute; width:130px; height:130px; border-radius:50%;
+  border:1.5px dashed rgba(255,255,255,.16);
+  top:18%; left:8%;
+  animation:tourne 30s linear infinite;
+}
+.deco-croix {
+  position:absolute; font-size:1.6rem; font-weight:300;
+  color:rgba(245,158,11,.35);
+  top:68%; left:42%;
+  animation:float-b 10s ease-in-out infinite;
+}
+.deco-croix-2 {
+  top:22%; right:8%; left:auto; font-size:1.1rem;
+  color:rgba(194,30,48,.4);
+  animation:float-a 13s ease-in-out infinite;
+}
+@keyframes tourne { to { transform:rotate(360deg) } }
+
+/* Indicateur de défilement */
+.scroll-hint {
+  position:absolute; bottom:30px; left:50%; transform:translateX(-50%);
+  width:26px; height:42px; border-radius:14px;
+  border:2px solid rgba(255,255,255,.35); z-index:3;
+  display:flex; justify-content:center; padding-top:7px;
+  transition:border-color .2s; opacity:0;
+  animation:fadein .8s 1.8s ease forwards;
+}
+.scroll-hint:hover { border-color:rgba(255,255,255,.7) }
+.scroll-hint-roue {
+  width:4px; height:8px; border-radius:4px; background:var(--or);
+  animation:roue 1.8s ease-in-out infinite;
+}
+@keyframes roue {
+  0%,100% { transform:translateY(0); opacity:1 }
+  60%     { transform:translateY(12px); opacity:.2 }
+}
+
+/* ===== MARQUEE ===== */
+.marquee {
+  background:var(--bleu-deep); overflow:hidden; padding:18px 0;
+  border-top:1px solid rgba(255,255,255,.06);
+  -webkit-mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-piste {
+  display:flex; width:max-content;
+  animation:defile 30s linear infinite;
+}
+.marquee:hover .marquee-piste { animation-play-state:paused }
+.marquee-item {
+  display:inline-flex; align-items:center; gap:40px; padding-right:40px;
+  font-family:var(--display); font-weight:700; font-size:.82rem;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:rgba(255,255,255,.55); white-space:nowrap;
+}
+.marquee-etoile { color:var(--or); font-size:.7rem }
+@keyframes defile { to { transform:translateX(-50%) } }
+
+/* ===== SPOTLIGHT (halo curseur sur cartes) ===== */
+.innov-card::before, .temoin-carte::before {
+  content:"";
+  position:absolute; inset:0; border-radius:inherit;
+  background:radial-gradient(420px circle at var(--sx,50%) var(--sy,50%), rgba(255,255,255,.14), transparent 45%);
+  opacity:0; transition:opacity .35s; pointer-events:none;
+}
+.innov-rouge::before, .innov-or::before {
+  background:radial-gradient(420px circle at var(--sx,50%) var(--sy,50%), rgba(30,72,192,.09), transparent 45%);
+}
+.innov-card:hover::before, .temoin-carte:hover::before { opacity:1 }
+.innov-card > *, .temoin-carte > * { position:relative }
+
+/* ===== BOUTON — REFLET BALAYANT ===== */
+.btn { position:relative; overflow:hidden }
+.btn::after {
+  content:"";
+  position:absolute; top:0; bottom:0; left:-80%; width:50%;
+  background:linear-gradient(105deg, transparent, rgba(255,255,255,.45), transparent);
+  transform:skewX(-20deg); transition:left .55s ease;
+  pointer-events:none;
+}
+.btn:hover::after { left:130% }
+
+/* ===== BACK TO TOP ===== */
+.back-top {
+  position:fixed; bottom:104px; right:28px; z-index:200;
+  width:48px; height:48px; border-radius:50%;
+  background:var(--blanc-pur); color:var(--bleu-dark);
+  border:1.5px solid var(--gris-4);
+  font-size:1.15rem; font-weight:800; line-height:1;
+  box-shadow:var(--sh-lg);
+  opacity:0; transform:translateY(16px); pointer-events:none;
+  transition:opacity .3s, transform .3s, background .2s, color .2s;
+}
+.back-top.visible { opacity:1; transform:none; pointer-events:auto }
+.back-top:hover { background:var(--bleu-dark); color:#fff }
+
+/* ===== SCROLLBAR & SÉLECTION ===== */
+::selection { background:var(--bleu-mid); color:#fff }
+::-webkit-scrollbar { width:11px }
+::-webkit-scrollbar-track { background:var(--gris-5) }
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(var(--bleu-mid), var(--bleu-dark));
+  border-radius:8px; border:2.5px solid var(--gris-5);
+}
+::-webkit-scrollbar-thumb:hover { background:var(--bleu-dark) }
+
+/* ===== REVEAL (cascade + flou) ===== */
+.reveal {
+  opacity:0; transform:translateY(34px); filter:blur(6px);
+  transition:opacity .8s cubic-bezier(.16,1,.3,1),
+             transform .8s cubic-bezier(.16,1,.3,1),
+             filter .8s cubic-bezier(.16,1,.3,1);
+}
+.reveal.vu { opacity:1; transform:none; filter:none }
+/* Cascade dans les grilles */
+.innov-grid  > .reveal:nth-child(2), .temoin-grid > .reveal:nth-child(2) { transition-delay:.12s }
+.innov-grid  > .reveal:nth-child(3), .temoin-grid > .reveal:nth-child(3) { transition-delay:.24s }
+.deux-voies  > .reveal:nth-child(2) { transition-delay:.14s }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width:960px) {
@@ -818,11 +967,14 @@ footer::after {
   .btn-whatsapp { bottom:20px; right:20px; width:54px; height:54px }
   .innov-card { padding:30px 24px }
   .temoin-carte { padding:26px 22px }
+  .scroll-hint { display:none }
+  .deco-anneau, .deco-croix { display:none }
+  .back-top { bottom:88px; right:20px; width:44px; height:44px }
 }
 
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto }
-  .reveal { opacity:1; transform:none; transition:none }
+  .reveal { opacity:1; transform:none; filter:none; transition:none }
   h1 .souligne path { animation:none; stroke-dashoffset:0 }
   .btn:hover, .carte-classe:hover, .valeur:hover { transform:none }
   .cycle-panel { animation:none }
@@ -831,4 +983,10 @@ footer::after {
   .deco-a, .deco-b, .deco-c { animation:none }
   .btn-whatsapp { animation:none }
   .annonce-dot { animation:none }
+  .mot { animation:none; transform:none }
+  .marquee-piste { animation:none }
+  .deco-anneau, .deco-croix, .eyebrow-pulse, .scroll-hint-roue { animation:none }
+  .scroll-hint { animation:none; opacity:1 }
+  .btn::after { display:none }
+  .hero-deco { transition:none }
 }

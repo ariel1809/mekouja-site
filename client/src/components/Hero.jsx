@@ -1,22 +1,53 @@
+import { useRef } from "react";
+
+// Découpe une chaîne en mots animés individuellement (révélation en cascade).
+function Mots({ texte, depart = 0 }) {
+  return texte.split(" ").filter(Boolean).map((mot, i) => (
+    <span className="mot-wrap" key={i}>
+      <span className="mot" style={{ animationDelay: `${depart + i * 0.07}s` }}>
+        {mot}&nbsp;
+      </span>
+    </span>
+  ));
+}
+
 export default function Hero({ ecole }) {
   const [debut, avant, souligne] = ecole.slogan;
+  const deco = useRef(null);
+
+  // Légère parallaxe des bulles décoratives suivant la souris.
+  const parallaxe = (e) => {
+    if (!deco.current) return;
+    const x = (e.clientX / window.innerWidth - 0.5) * 30;
+    const y = (e.clientY / window.innerHeight - 0.5) * 30;
+    deco.current.style.transform = `translate(${x}px, ${y}px)`;
+  };
 
   return (
-    <section className="hero" id="accueil">
-      <div className="hero-deco" aria-hidden="true">
+    <section className="hero" id="accueil" onMouseMove={parallaxe}>
+      <div className="hero-deco" ref={deco} aria-hidden="true">
         <span className="deco-a"></span>
         <span className="deco-b"></span>
         <span className="deco-c"></span>
+        <span className="deco-anneau"></span>
+        <span className="deco-croix">+</span>
+        <span className="deco-croix deco-croix-2">+</span>
       </div>
 
       <div className="wrap hero-inner">
         <div>
-          <span className="eyebrow">{ecole.ville} · {ecole.niveaux}</span>
+          <span className="eyebrow">
+            <span className="eyebrow-pulse" aria-hidden="true"></span>
+            {ecole.ville} · {ecole.niveaux}
+          </span>
           <h1>
-            {debut}<br />
-            {avant}
+            <Mots texte={debut} depart={0.15} />
+            <br />
+            <Mots texte={avant} depart={0.45} />
             <span className="souligne">
-              {souligne}
+              <span className="mot-wrap">
+                <span className="mot" style={{ animationDelay: "0.7s" }}>{souligne}</span>
+              </span>
               <svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true">
                 <path d="M4 10 C 60 2, 150 14, 296 6" />
               </svg>
@@ -44,6 +75,10 @@ export default function Hero({ ecole }) {
           </ul>
         </aside>
       </div>
+
+      <a className="scroll-hint" href="#innovations" aria-label="Faire défiler vers le contenu">
+        <span className="scroll-hint-roue" aria-hidden="true"></span>
+      </a>
     </section>
   );
 }

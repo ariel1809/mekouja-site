@@ -25,6 +25,13 @@ const ITEMS = [
   },
 ];
 
+// Le halo lumineux suit la position du curseur sur la carte.
+function spotlight(e) {
+  const r = e.currentTarget.getBoundingClientRect();
+  e.currentTarget.style.setProperty("--sx", `${e.clientX - r.left}px`);
+  e.currentTarget.style.setProperty("--sy", `${e.clientY - r.top}px`);
+}
+
 export default function Innovations() {
   return (
     <section className="innovations" id="innovations">
@@ -42,6 +49,7 @@ export default function Innovations() {
             <article
               key={item.titre}
               className={`innov-card innov-${item.theme} reveal`}
+              onMouseMove={spotlight}
             >
               <div className="innov-ico" aria-hidden="true">
                 {item.icone}

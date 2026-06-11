@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { getJSON } from "./api.js";
 import useReveal from "./hooks/useReveal.js";
 import AnnonceBar from "./components/AnnonceBar.jsx";
+import ScrollProgress from "./components/ScrollProgress.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
+import Marquee from "./components/Marquee.jsx";
+import BackToTop from "./components/BackToTop.jsx";
 import Innovations from "./components/Innovations.jsx";
 import APropos from "./components/APropos.jsx";
 import Temoignages from "./components/Temoignages.jsx";
@@ -52,10 +55,12 @@ export default function App() {
 
   return (
     <>
+      <ScrollProgress />
       <AnnonceBar ecole={ecole} />
       <Navbar ecole={ecole} />
       <main>
         <Hero ecole={ecole} />
+        <Marquee />
         <Innovations />
         <APropos ecole={ecole} />
         <Temoignages items={ecole.temoignages} />
@@ -66,6 +71,7 @@ export default function App() {
       </main>
       <Footer ecole={ecole} />
       <WhatsApp tel={ecole.contact.telephones[0]} />
+      <BackToTop />
     </>
   );
 }

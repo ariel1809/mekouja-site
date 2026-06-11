@@ -1,3 +1,9 @@
+function spotlight(e) {
+  const r = e.currentTarget.getBoundingClientRect();
+  e.currentTarget.style.setProperty("--sx", `${e.clientX - r.left}px`);
+  e.currentTarget.style.setProperty("--sy", `${e.clientY - r.top}px`);
+}
+
 export default function Temoignages({ items }) {
   return (
     <section className="temoignages" id="temoignages">
@@ -12,7 +18,7 @@ export default function Temoignages({ items }) {
         </div>
         <div className="temoin-grid">
           {items.map((t) => (
-            <article key={t.nom} className="temoin-carte reveal">
+            <article key={t.nom} className="temoin-carte reveal" onMouseMove={spotlight}>
               <div className="guillemets" aria-hidden="true">"</div>
               <p className="temoin-texte">{t.texte}</p>
               <div className="temoin-auteur">
