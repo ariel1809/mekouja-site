@@ -1,7 +1,7 @@
 {
-  "name": "college-la-seve",
+  "name": "complexe-bilingue-mekouja",
   "version": "1.0.0",
-  "description": "Site web full-stack du Collège Bilingue La Sève — React + Express",
+  "description": "Site web du COmplexe Bilingue MEKOUJA",
   "type": "module",
   "scripts": {
     "install:all": "npm install && npm install --prefix client",
