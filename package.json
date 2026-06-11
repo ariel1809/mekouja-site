@@ -1,7 +1,7 @@
 {
   "name": "complexe-bilingue-mekouja",
   "version": "1.0.0",
-  "description": "Site web du COmplexe Bilingue MEKOUJA",
+  "description": "Site web du Complexe Bilingue MEKOUJA",
   "type": "module",
   "scripts": {
     "install:all": "npm install && npm install --prefix client",
