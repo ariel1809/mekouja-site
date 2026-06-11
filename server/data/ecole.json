@@ -1,9 +1,9 @@
 {
   "nom": "MEKOUJA",
-  "sigle": "M",
+  "sigle": "CBEM",
   "ville": "Yaoundé",
   "slogan": ["Former le citoyen bilingue,", "préparer le professionnel de ", "demain"],
-  "accroche": "Le Complexe Scolaire Bilingue MEKOUJA, situé à Nsazomo (Yaoundé VII), accueille les élèves de la maternelle à la Terminale. Bilinguisme intégral, filières techniques pratiques et cours d'entrepreneuriat : nous formons des élèves complets, prêts à s'insérer dans la société et dans le monde du travail.",
+  "accroche": "Le Collège Bilingue Entrepreneurial MEKOUJA, situé à Nsazomo (Yaoundé VII), accueille les élèves de la maternelle à la Terminale. Bilinguisme intégral, filières techniques pratiques et cours d'entrepreneuriat : nous formons des élèves complets, prêts à s'insérer dans la société et dans le monde du travail.",
   "niveaux": "Maternelle — Terminale",
   "aRetenir": [
     { "label": "Rentrée 2026–2027", "valeur": "lundi 7 septembre 2026" },
@@ -12,7 +12,7 @@
     { "label": "Visites de l'école", "valeur": "chaque mercredi, 9 h – 12 h" }
   ],
   "aPropos": [
-    "Implanté au quartier Nsazomo à Yaoundé VII, le Complexe Scolaire Bilingue MEKOUJA est un établissement privé d'enseignement général et technique qui accompagne les élèves de la petite section de maternelle jusqu'en classe de Terminale. Notre conviction est que chaque enfant porte en lui un potentiel qui mérite d'être révélé par un encadrement rigoureux, bienveillant et adapté à son rythme.",
+    "Implanté au quartier Nsazomo à Yaoundé VII, le Collège Bilingue Entrepreneurial MEKOUJA est un établissement privé d'enseignement général et technique qui accompagne les élèves de la petite section de maternelle jusqu'en classe de Terminale. Notre conviction est que chaque enfant porte en lui un potentiel qui mérite d'être révélé par un encadrement rigoureux, bienveillant et adapté à son rythme.",
     "Dès la maternelle et tout au long du primaire, nos élèves bénéficient d'un bilinguisme intégral : le français et l'anglais sont enseignés et pratiqués à parité dans toutes les disciplines. Cette immersion précoce prépare chaque enfant à évoluer avec aisance dans les deux sous-systèmes éducatifs camerounais et à s'ouvrir sur le monde.",
     "Au collège, MEKOUJA va plus loin avec des filières techniques pratiques en Maçonnerie et en Coupe-Couture, et des cours d'entrepreneuriat intégrés au programme. Ces innovations permettent aux élèves d'acquérir un vrai savoir-faire métier, de développer leur esprit d'initiative et de s'insérer directement dans le monde du travail — avec ou sans poursuite d'études supérieures."
   ],
