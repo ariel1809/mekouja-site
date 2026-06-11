@@ -3,6 +3,12 @@ export default function Hero({ ecole }) {
 
   return (
     <section className="hero" id="accueil">
+      <div className="hero-deco" aria-hidden="true">
+        <span className="deco-a"></span>
+        <span className="deco-b"></span>
+        <span className="deco-c"></span>
+      </div>
+
       <div className="wrap hero-inner">
         <div>
           <span className="eyebrow">{ecole.ville} · {ecole.niveaux}</span>
