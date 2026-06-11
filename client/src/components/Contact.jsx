@@ -100,7 +100,7 @@ export default function Contact({ ecole }) {
             <div className="maps-embed">
               <iframe
                 title="Localisation CBEM MEKOUJA — Nsazomo, Yaoundé"
-                src="https://maps.google.com/maps?q=Nsazomo%2C+Yaound%C3%A9&output=embed&z=14"
+                src="https://maps.google.com/maps?cid=15464742400807477020&output=embed&z=17"
                 width="100%"
                 height="220"
                 style={{ border: 0, display: "block" }}
