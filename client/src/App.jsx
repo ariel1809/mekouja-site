@@ -5,7 +5,6 @@ import AnnonceBar from "./components/AnnonceBar.jsx";
 import ScrollProgress from "./components/ScrollProgress.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
-import Marquee from "./components/Marquee.jsx";
 import BackToTop from "./components/BackToTop.jsx";
 import Innovations from "./components/Innovations.jsx";
 import APropos from "./components/APropos.jsx";
@@ -60,7 +59,6 @@ export default function App() {
       <Navbar ecole={ecole} />
       <main>
         <Hero ecole={ecole} />
-        <Marquee />
         <Innovations />
         <APropos ecole={ecole} />
         <Temoignages items={ecole.temoignages} />

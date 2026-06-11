@@ -841,27 +841,6 @@ footer::after {
   60%     { transform:translateY(12px); opacity:.2 }
 }
 
-/* ===== MARQUEE ===== */
-.marquee {
-  background:var(--bleu-deep); overflow:hidden; padding:18px 0;
-  border-top:1px solid rgba(255,255,255,.06);
-  -webkit-mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  mask-image:linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-}
-.marquee-piste {
-  display:flex; width:max-content;
-  animation:defile 30s linear infinite;
-}
-.marquee:hover .marquee-piste { animation-play-state:paused }
-.marquee-item {
-  display:inline-flex; align-items:center; gap:40px; padding-right:40px;
-  font-family:var(--display); font-weight:700; font-size:.82rem;
-  letter-spacing:.16em; text-transform:uppercase;
-  color:rgba(255,255,255,.55); white-space:nowrap;
-}
-.marquee-etoile { color:var(--or); font-size:.7rem }
-@keyframes defile { to { transform:translateX(-50%) } }
-
 /* ===== SPOTLIGHT (halo curseur sur cartes) ===== */
 .innov-card::before, .temoin-carte::before {
   content:"";
@@ -984,7 +963,6 @@ footer::after {
   .btn-whatsapp { animation:none }
   .annonce-dot { animation:none }
   .mot { animation:none; transform:none }
-  .marquee-piste { animation:none }
   .deco-anneau, .deco-croix, .eyebrow-pulse, .scroll-hint-roue { animation:none }
   .scroll-hint { animation:none; opacity:1 }
   .btn::after { display:none }
