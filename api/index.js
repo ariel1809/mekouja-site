@@ -1,5 +1,6 @@
 import express from "express";
 import { createRequire } from "module";
+import { emailNotification, emailConfirmation } from "./emails.js";
 
 const require = createRequire(import.meta.url);
 
@@ -40,20 +41,26 @@ app.post("/api/contact", async (req, res) => {
         service: "gmail",
         auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS }
       });
+
+      // 1. Notification HTML stylée au secrétariat
+      const notif = emailNotification(entry);
       await transport.sendMail({
         from: `"Site MEKOUJA" <${process.env.GMAIL_USER}>`,
         to: process.env.GMAIL_USER,
-        replyTo: email.trim(),
-        subject: `[MEKOUJA] ${objet || "Nouveau message"} — ${nom.trim()}`,
-        text: [
-          `Nom      : ${entry.nom}`,
-          `E-mail   : ${entry.email}`,
-          `Tél.     : ${entry.tel || "—"}`,
-          `Objet    : ${entry.objet || "—"}`,
-          `Classe   : ${entry.classe || "—"}`,
-          ``,
-          entry.message
-        ].join("\n")
+        replyTo: entry.email,
+        subject: notif.subject,
+        html: notif.html,
+        text: notif.text
+      });
+
+      // 2. Accusé de réception élégant au visiteur
+      const accuse = emailConfirmation(entry);
+      await transport.sendMail({
+        from: `"Collège MEKOUJA" <${process.env.GMAIL_USER}>`,
+        to: entry.email,
+        subject: accuse.subject,
+        html: accuse.html,
+        text: accuse.text
       });
     } catch (err) {
       // L'e-mail n'est pas critique — on continue quand même
