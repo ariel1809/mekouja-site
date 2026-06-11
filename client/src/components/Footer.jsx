@@ -18,8 +18,10 @@ export default function Footer({ ecole }) {
             <h4>Navigation</h4>
             <ul>
               <li><a href="#apropos">À propos</a></li>
+              <li><a href="#innovations">Nos innovations</a></li>
               <li><a href="#classes">Nos classes</a></li>
               <li><a href="#admission">Admission</a></li>
+              <li><a href="#faq">FAQ</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>

@@ -24,6 +24,15 @@ export default function Admission({ donnees }) {
           ))}
         </div>
 
+        <div className="frais-note reveal">
+          <div className="frais-ico" aria-hidden="true">💬</div>
+          <div>
+            <h4>Frais de scolarité</h4>
+            <p>Les frais varient selon le cycle et la classe. Pour connaître les tarifs actualisés, contactez notre secrétariat ou venez nous rendre visite.</p>
+            <a href="#contact" className="btn-or">Nous contacter →</a>
+          </div>
+        </div>
+
         <div className="tableau-adm reveal">
           <div className="titre">
             <h3>{recapitulatif.titre}</h3>
