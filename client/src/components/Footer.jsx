@@ -43,7 +43,7 @@ export default function Footer({ ecole }) {
         </div>
 
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Complexe Scolaire Bilingue {ecole.nom}. Tous droits réservés.</span>
+          <span>© {new Date().getFullYear()} Collège Bilingue Entrepreneurial {ecole.nom}. Tous droits réservés.</span>
           <nav aria-label="Liens de bas de page">
             <a href="#apropos">À propos</a>
             <a href="#classes">Classes</a>
