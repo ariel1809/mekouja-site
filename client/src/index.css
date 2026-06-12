@@ -170,6 +170,21 @@ header.scrolled {
     linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
   background-size:52px 52px; pointer-events:none;
 }
+/* Photo du campus en toile de fond, teintée pour préserver la lisibilité */
+.hero-photo { position:absolute; inset:0; overflow:hidden }
+.hero-photo img {
+  width:100%; height:100%; object-fit:cover; object-position:center 32%;
+  opacity:.38; filter:saturate(1.08);
+}
+.hero-photo::after {
+  content:"";
+  position:absolute; inset:0;
+  background:linear-gradient(180deg,
+    rgba(20,40,120,.5)  0%,
+    rgba(20,40,120,.22) 42%,
+    rgba(7,16,42,.88)   100%);
+}
+
 /* Bulles décoratives flottantes */
 .hero-deco { position:absolute; inset:0; pointer-events:none; overflow:hidden; z-index:1 }
 .deco-a {
@@ -302,6 +317,26 @@ h2 {
 .apropos-texte p { color:var(--gris-1); line-height:1.78; font-size:1.03rem }
 .apropos-texte p + p { margin-top:16px }
 
+/* Duo de photos façon polaroid */
+.apropos-photos { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:34px }
+.apropos-photos figure {
+  background:var(--blanc-pur); border:1px solid var(--gris-4);
+  border-radius:var(--r); padding:10px 10px 12px;
+  box-shadow:var(--sh);
+  transition:transform .3s, box-shadow .3s;
+}
+.apropos-photos figure:first-child { transform:rotate(-1.4deg) }
+.apropos-photos figure:last-child  { transform:rotate(1.2deg) }
+.apropos-photos figure:hover { transform:rotate(0) translateY(-5px); box-shadow:var(--sh-lg) }
+.apropos-photos img {
+  width:100%; aspect-ratio:4/3; object-fit:cover;
+  border-radius:calc(var(--r) - 6px);
+}
+.apropos-photos figcaption {
+  font-family:var(--chalk); font-size:1.12rem; color:var(--gris-2);
+  text-align:center; margin-top:9px; line-height:1.3;
+}
+
 .valeurs { margin-top:40px; display:grid; gap:12px }
 .valeur {
   display:flex; gap:18px; align-items:flex-start;
@@ -367,13 +402,15 @@ h2 {
 .cycle-panel { animation:fadein .3s ease }
 @keyframes fadein { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:none} }
 .cycle-intro {
-  display:flex; justify-content:space-between; align-items:center;
-  flex-wrap:wrap; gap:16px; margin-bottom:24px;
+  display:grid; grid-template-columns:320px 1fr; margin-bottom:24px;
   background:var(--blanc-pur); border:1px solid var(--gris-4);
-  border-radius:var(--r-lg); padding:24px 28px; box-shadow:var(--sh-sm);
+  border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--sh-sm);
 }
+.cycle-photo { width:100%; height:100%; min-height:230px; object-fit:cover }
+.cycle-intro-texte { padding:26px 30px }
 .cycle-intro h3 { font-family:var(--display); font-weight:800; font-size:1.5rem; color:var(--encre) }
-.cycle-intro p { color:var(--gris-2); max-width:55ch; margin-top:6px; font-size:.97rem }
+.cycle-intro p { color:var(--gris-2); max-width:62ch; margin-top:6px; font-size:.97rem }
+.cycle-intro .badge-adm { display:inline-block; margin-top:16px }
 .badge-adm {
   font-size:.76rem; font-weight:700; padding:8px 16px;
   border-radius:99px; white-space:nowrap; flex:none;
@@ -628,6 +665,15 @@ footer::after {
   color:var(--encre);
 }
 .innov-or:hover { box-shadow:var(--sh-lg); border-color:rgba(245,158,11,.4) }
+/* Photo pleine largeur en tête de carte */
+.innov-photo {
+  margin:-40px -32px 28px; height:200px; overflow:hidden;
+}
+.innov-photo img {
+  width:100%; height:100%; object-fit:cover; object-position:center 30%;
+  transition:transform .6s cubic-bezier(.16,1,.3,1);
+}
+.innov-card:hover .innov-photo img { transform:scale(1.06) }
 .innov-ico {
   font-size:2.2rem; width:64px; height:64px; border-radius:18px;
   display:grid; place-items:center; margin-bottom:26px;
@@ -650,6 +696,32 @@ footer::after {
 .innov-rouge h3, .innov-or h3 { color:var(--encre) }
 .innov-bleu p { font-size:.96rem; color:rgba(255,255,255,.76); line-height:1.74 }
 .innov-rouge p, .innov-or p { font-size:.96rem; color:var(--gris-2); line-height:1.74 }
+
+/* ===== VIE SCOLAIRE (GALERIE) ===== */
+.vie-scolaire { background:var(--gris-5) }
+.galerie { display:grid; grid-template-columns:repeat(4,1fr); gap:16px }
+.galerie-item {
+  position:relative; margin:0; border-radius:var(--r-lg); overflow:hidden;
+  box-shadow:var(--sh); aspect-ratio:4/3;
+}
+.galerie-grande { grid-column:span 2; aspect-ratio:8/5 }
+.galerie-item img {
+  width:100%; height:100%; object-fit:cover;
+  transition:transform .6s cubic-bezier(.16,1,.3,1);
+}
+.galerie-item:hover img { transform:scale(1.06) }
+.galerie-item figcaption {
+  position:absolute; left:0; right:0; bottom:0;
+  padding:44px 18px 14px;
+  background:linear-gradient(180deg, transparent 0%, rgba(7,16,42,.86) 100%);
+  color:#fff; font-size:.88rem; font-weight:600; line-height:1.4;
+}
+/* Cascade d'apparition */
+.galerie > .reveal:nth-child(2) { transition-delay:.08s }
+.galerie > .reveal:nth-child(3) { transition-delay:.16s }
+.galerie > .reveal:nth-child(4) { transition-delay:.08s }
+.galerie > .reveal:nth-child(5) { transition-delay:.16s }
+.galerie > .reveal:nth-child(6) { transition-delay:.24s }
 
 /* ===== TÉMOIGNAGES ===== */
 .temoignages {
@@ -911,6 +983,9 @@ footer::after {
   .deco-a, .deco-b, .deco-c { display:none }
   .innov-grid, .temoin-grid { grid-template-columns:1fr }
   .frais-note { flex-direction:column; align-items:flex-start; gap:16px }
+  .galerie { grid-template-columns:repeat(2,1fr) }
+  .cycle-intro { grid-template-columns:1fr }
+  .cycle-photo { min-height:0; height:215px }
   .nav-links {
     position:fixed; inset:72px 0 auto 0;
     background:rgba(250,250,249,.97);
@@ -945,6 +1020,11 @@ footer::after {
   .annonce-bar p { gap:4px }
   .btn-whatsapp { bottom:20px; right:20px; width:54px; height:54px }
   .innov-card { padding:30px 24px }
+  .innov-photo { margin:-30px -24px 24px; height:170px }
+  .galerie { grid-template-columns:1fr }
+  .galerie-grande { grid-column:auto }
+  .apropos-photos { grid-template-columns:1fr }
+  .apropos-photos figure:first-child, .apropos-photos figure:last-child { transform:none }
   .temoin-carte { padding:26px 22px }
   .scroll-hint { display:none }
   .deco-anneau, .deco-croix { display:none }
@@ -967,4 +1047,7 @@ footer::after {
   .scroll-hint { animation:none; opacity:1 }
   .btn::after { display:none }
   .hero-deco { transition:none }
+  .innov-photo img, .galerie-item img { transition:none }
+  .innov-card:hover .innov-photo img, .galerie-item:hover img { transform:none }
+  .apropos-photos figure { transition:none }
 }

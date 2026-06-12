@@ -8,6 +8,7 @@ import Hero from "./components/Hero.jsx";
 import BackToTop from "./components/BackToTop.jsx";
 import Innovations from "./components/Innovations.jsx";
 import APropos from "./components/APropos.jsx";
+import VieScolaire from "./components/VieScolaire.jsx";
 import Temoignages from "./components/Temoignages.jsx";
 import Classes from "./components/Classes.jsx";
 import Admission from "./components/Admission.jsx";
@@ -35,6 +36,14 @@ export default function App() {
   const pret = ecole && classes && admission;
   useReveal([pret]);
 
+  // Le contenu apparaît après le chargement des données : on rejoue la
+  // navigation vers l'ancre (#section) pour que les liens profonds marchent.
+  useEffect(() => {
+    if (!pret || !window.location.hash) return;
+    const cible = document.querySelector(window.location.hash);
+    if (cible) cible.scrollIntoView();
+  }, [pret]);
+
   if (erreur) {
     return (
       <div className="erreur-api">
@@ -61,6 +70,7 @@ export default function App() {
         <Hero ecole={ecole} />
         <Innovations />
         <APropos ecole={ecole} />
+        <VieScolaire />
         <Temoignages items={ecole.temoignages} />
         <Classes donnees={classes} />
         <Admission donnees={admission} />

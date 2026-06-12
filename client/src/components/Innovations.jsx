@@ -4,6 +4,8 @@ const ITEMS = [
     theme: "bleu",
     sousTitre: "De la maternelle au CM2",
     titre: "Bilinguisme intégral",
+    photo: "/photos/eleves-lecture-anglais.jpg",
+    alt: "Élèves de MEKOUJA lisant un manuel d'anglais dans la cour, sous les drapeaux du campus",
     texte:
       "Toutes les matières sont enseignées en français et en anglais à parité, dès la petite section. Nos élèves maîtrisent les deux langues officielles avant même d'entrer au collège.",
   },
@@ -12,6 +14,8 @@ const ITEMS = [
     theme: "rouge",
     sousTitre: "Maçonnerie & Coupe-Couture",
     titre: "Filières techniques",
+    photo: "/photos/projet-scientifique-eleves.jpg",
+    alt: "Élèves présentant une maquette réalisée en atelier lors d'une exposition de projets",
     texte:
       "Au collège, un vrai métier s'apprend en atelier. Chantiers-école, pratique hebdomadaire, préparation au CAP — nos élèves entrent dans le monde du travail avec des compétences concrètes.",
   },
@@ -20,6 +24,8 @@ const ITEMS = [
     theme: "or",
     sousTitre: "Du collège à la Terminale",
     titre: "Entrepreneuriat",
+    photo: "/photos/eleve-filiere-sante-stethoscope.jpg",
+    alt: "Élève en blouse blanche avec un stéthoscope, déjà tournée vers son métier de demain",
     texte:
       "Des cours d'entrepreneuriat à chaque niveau : initiation au collège, création de projet au lycée. MEKOUJA forme des élèves capables d'inventer leur propre avenir.",
   },
@@ -51,6 +57,9 @@ export default function Innovations() {
               className={`innov-card innov-${item.theme} reveal`}
               onMouseMove={spotlight}
             >
+              <div className="innov-photo">
+                <img src={item.photo} alt={item.alt} loading="lazy" />
+              </div>
               <div className="innov-ico" aria-hidden="true">
                 {item.icone}
               </div>

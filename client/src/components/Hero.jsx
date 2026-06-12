@@ -25,6 +25,13 @@ export default function Hero({ ecole }) {
 
   return (
     <section className="hero" id="accueil" onMouseMove={parallaxe}>
+      <div className="hero-photo" aria-hidden="true">
+        <img
+          src="/photos/rassemblement-cour-ecole.jpg"
+          alt=""
+          fetchpriority="high"
+        />
+      </div>
       <div className="hero-deco" ref={deco} aria-hidden="true">
         <span className="deco-a"></span>
         <span className="deco-b"></span>

@@ -30,6 +30,7 @@ export default function Navbar({ ecole }) {
         </button>
         <ul className={`nav-links ${ouvert ? "open" : ""}`}>
           <li><a href="#apropos" onClick={fermer}>À propos</a></li>
+          <li><a href="#vie-scolaire" onClick={fermer}>Vie scolaire</a></li>
           <li><a href="#classes" onClick={fermer}>Nos classes</a></li>
           <li><a href="#admission" onClick={fermer}>Admission</a></li>
           <li><a href="#contact" className="cta" onClick={fermer}>Contact</a></li>

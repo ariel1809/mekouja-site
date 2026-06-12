@@ -53,6 +53,24 @@ export default function APropos({ ecole }) {
             {ecole.aPropos.map((paragraphe, i) => (
               <p key={i}>{paragraphe}</p>
             ))}
+            <div className="apropos-photos">
+              <figure>
+                <img
+                  src="/photos/equipe-pedagogique-personnel.jpg"
+                  alt="L'équipe pédagogique et administrative de MEKOUJA réunie devant le campus"
+                  loading="lazy"
+                />
+                <figcaption>Une équipe pédagogique stable et engagée</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="/photos/eleves-diversite-vie-scolaire.jpg"
+                  alt="Élèves souriantes dans la cour de l'école"
+                  loading="lazy"
+                />
+                <figcaption>Une école bienveillante, ouverte à toutes les familles</figcaption>
+              </figure>
+            </div>
             <div className="valeurs">
               {ecole.valeurs.map((v, i) => (
                 <div className="valeur" key={v.titre}>

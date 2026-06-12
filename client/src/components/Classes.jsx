@@ -1,5 +1,29 @@
 import { useState } from "react";
 
+// Photo d'ambiance associée à chaque cycle.
+const PHOTOS_CYCLES = {
+  maternelle: {
+    src: "/photos/espace-jeux-maternelle.jpg",
+    alt: "Enfants de maternelle jouant sur les structures gonflables de l'espace de jeux",
+  },
+  primaire: {
+    src: "/photos/eleves-souriants-pouces-leves.jpg",
+    alt: "Élèves du primaire souriants, pouces levés, dans la cour de l'école",
+  },
+  "premier-cycle": {
+    src: "/photos/eleves-pouces-leves-batiment.jpg",
+    alt: "Collégiens en uniforme devant le bâtiment principal du campus",
+  },
+  techniques: {
+    src: "/photos/projet-scientifique-eleves.jpg",
+    alt: "Élèves des filières techniques présentant une maquette réalisée en atelier",
+  },
+  "second-cycle": {
+    src: "/photos/remise-diplomes-graduation.jpg",
+    alt: "Lauréats en toge lors de la cérémonie de remise des diplômes",
+  },
+};
+
 export default function Classes({ donnees }) {
   const cycles = donnees.cycles;
   const [actif, setActif] = useState(cycles[0]?.id);
@@ -30,11 +54,19 @@ export default function Classes({ donnees }) {
 
         <div className="cycle-panel" key={cycle.id}>
           <div className="cycle-intro">
-            <div>
+            {PHOTOS_CYCLES[cycle.id] && (
+              <img
+                className="cycle-photo"
+                src={PHOTOS_CYCLES[cycle.id].src}
+                alt={PHOTOS_CYCLES[cycle.id].alt}
+                loading="lazy"
+              />
+            )}
+            <div className="cycle-intro-texte">
               <h3>{cycle.titre}</h3>
               <p>{cycle.description}</p>
+              <span className={`badge-adm badge-${cycle.badge.type}`}>{cycle.badge.texte}</span>
             </div>
-            <span className={`badge-adm badge-${cycle.badge.type}`}>{cycle.badge.texte}</span>
           </div>
           <div className="grille-classes">
             {cycle.classes.map((cl) => (
