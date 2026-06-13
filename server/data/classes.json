@@ -74,20 +74,45 @@
     },
     {
       "id": "techniques",
-      "onglet": "Collège — Technique",
-      "titre": "Filières Techniques — Maçonnerie & Coupe-Couture",
-      "description": "Deux formations pratiques et certifiantes dès le collège, menées en parallèle d'une éducation générale bilingue. L'objectif : permettre à chaque élève d'acquérir un métier concret et de s'insérer directement dans le monde du travail à l'issue de sa formation.",
+      "onglet": "Enseignement Technique",
+      "titre": "Enseignement Technique — du CAP au Baccalauréat",
+      "description": "Des filières professionnalisantes complètes, menées en parallèle d'une éducation générale bilingue. Après le CEP, les élèves préparent un CAP (Maçonnerie, Couture sur mesure, Électricité) ; après le BEPC ou le CAP, ils accèdent au second cycle technique (2nde à Terminale) en Industrie d'Habillement, Génie Civil, Génie Électrique ou Sciences de la santé, jusqu'au Probatoire et au Baccalauréat techniques (EST).",
       "badge": { "texte": "Admission sur étude de dossier", "type": "dossier" },
       "classes": [
         {
           "nom": "Maçonnerie",
-          "detail": "3 ans · Collège",
-          "modalites": ["Ateliers pratiques sur chantiers-école", "Coffrage, ferraillage, pose de carrelage, enduits", "Lecture de plans et métrés", "Préparation au CAP Maçonnerie"]
+          "detail": "CAP · MACO",
+          "modalites": ["Accessible dès l'obtention du CEP", "Coffrage, ferraillage, pose de carrelage, enduits", "Lecture de plans et métrés sur chantiers-école", "Préparation au CAP Maçonnerie"]
         },
         {
-          "nom": "Coupe & Couture",
-          "detail": "3 ans · Collège",
-          "modalites": ["Atelier de couture entièrement équipé", "Patronage, coupe, confection et retouche", "Création et valorisation des productions", "Préparation au CAP Coupe-Couture"]
+          "nom": "Couture sur mesure",
+          "detail": "CAP · COME",
+          "modalites": ["Accessible dès l'obtention du CEP", "Patronage, coupe, confection et retouche", "Atelier de couture entièrement équipé", "Préparation au CAP Couture"]
+        },
+        {
+          "nom": "Électricité",
+          "detail": "CAP · ELECT",
+          "modalites": ["Accessible dès l'obtention du CEP", "Installation et câblage électrique domestique", "Sécurité, schémas et mesures électriques", "Préparation au CAP Électricité"]
+        },
+        {
+          "nom": "Industrie d'Habillement",
+          "detail": "2nde – Tle · IH",
+          "modalites": ["Accessible après le BEPC ou le CAP", "Stylisme, modélisme et production en série", "Conduite de machines industrielles de confection", "Préparation au Probatoire et au Bac technique (EST)"]
+        },
+        {
+          "nom": "Génie Civil",
+          "detail": "2nde – Tle · F4",
+          "modalites": ["Accessible après le BEPC ou le CAP", "Dessin technique, béton armé et topographie", "Lecture de plans et conduite de petits ouvrages", "Préparation au Probatoire et au Bac technique F4"]
+        },
+        {
+          "nom": "Génie Électrique",
+          "detail": "2nde – Tle · F3",
+          "modalites": ["Accessible après le BEPC ou le CAP", "Électrotechnique, automatismes et électronique", "Travaux pratiques en atelier équipé", "Préparation au Probatoire et au Bac technique F3"]
+        },
+        {
+          "nom": "Sciences de la santé",
+          "detail": "2nde – Tle · F8",
+          "modalites": ["Accessible après le BEPC", "Sciences infirmières et soins de base", "Biologie, hygiène et techniques de santé", "Préparation au Probatoire et au Bac technique F8"]
         }
       ]
     },

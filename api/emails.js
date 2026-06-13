@@ -176,7 +176,7 @@ export function emailConfirmation(entry) {
             🏫 &nbsp;<strong>Visitez l'école</strong> — chaque mercredi, 9 h – 12 h, sans rendez-vous
           </td></tr>
           <tr><td style="${police}padding:5px 0;font-size:14px;color:${C.encre};line-height:1.6;">
-            📞 &nbsp;<strong>Besoin urgent ?</strong> Appelez-nous au +237 6 55 00 00 00
+            📞 &nbsp;<strong>Besoin urgent ?</strong> Appelez-nous au +237 6 76 31 76 08
           </td></tr>
           <tr><td style="${police}padding:5px 0;font-size:14px;color:${C.encre};line-height:1.6;">
             🎓 &nbsp;<strong>Découvrez nos classes</strong> — <a href="${SITE}/#classes" style="color:${C.bleu};font-weight:700;text-decoration:none;">de la maternelle à la Terminale</a>
@@ -207,7 +207,7 @@ export function emailConfirmation(entry) {
     ``,
     `En attendant :`,
     `- Visites de l'école : chaque mercredi, 9 h – 12 h, sans rendez-vous`,
-    `- Téléphone / WhatsApp : +237 6 55 00 00 00`,
+    `- Téléphone / WhatsApp : +237 6 76 31 76 08`,
     `- Site web : ${SITE}`,
     ``,
     `Cordialement,`,

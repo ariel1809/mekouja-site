@@ -815,6 +815,68 @@ footer::after {
 }
 .btn-or:hover { background:var(--or-doux); transform:translateY(-2px); box-shadow:0 12px 32px rgba(245,158,11,.38) }
 
+/* ===== FRAIS — grille tarifaire ===== */
+.frais-bloc { margin-top:40px }
+.frais-head {
+  display:flex; justify-content:space-between; align-items:flex-start;
+  gap:32px; flex-wrap:wrap; margin-bottom:28px;
+}
+.frais-head h3 { font-family:var(--display); font-size:1.5rem; font-weight:800; color:var(--encre); margin:8px 0 10px }
+.frais-head > div > p { font-size:.96rem; color:var(--gris-2); line-height:1.7; max-width:620px }
+.frais-calendrier {
+  list-style:none; display:flex; flex-direction:column; gap:10px;
+  background:var(--or-pale); border:1.5px solid rgba(245,158,11,.25);
+  border-radius:var(--r-lg); padding:18px 22px; flex:none;
+}
+.frais-calendrier li { display:flex; flex-direction:column; gap:1px }
+.frais-calendrier b { font-family:var(--display); font-size:.82rem; color:var(--or-doux, #B45309) }
+.frais-calendrier span { font-size:.92rem; font-weight:600; color:var(--encre) }
+
+.frais-grilles {
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));
+  gap:22px; margin-bottom:22px;
+}
+.frais-table {
+  background:var(--blanc-pur); border:1px solid var(--gris-4);
+  border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--sh);
+}
+.frais-table h4 {
+  font-family:var(--display); font-size:1.02rem; font-weight:800; color:var(--encre);
+  padding:16px 22px; background:var(--gris-5); border-bottom:1px solid var(--gris-4);
+}
+.frais-table table { font-size:.9rem }
+.frais-table th { padding:11px 18px }
+.frais-table td { padding:12px 18px }
+.frais-table td:first-child { font-size:.9rem }
+.frais-total { font-weight:800; color:var(--bleu-mid); font-variant-numeric:tabular-nums }
+
+.frais-annexes {
+  display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));
+  gap:22px; margin-bottom:22px;
+}
+.frais-carte-dossier {
+  background:var(--blanc-pur); border:1px solid var(--gris-4);
+  border-radius:var(--r-lg); box-shadow:var(--sh); padding:22px 24px;
+}
+.frais-carte-dossier h4 { font-family:var(--display); font-size:1.02rem; font-weight:800; color:var(--encre); margin-bottom:14px }
+.frais-inscription { list-style:none; margin-bottom:18px }
+.frais-inscription li {
+  display:flex; justify-content:space-between; align-items:center; gap:12px;
+  padding:10px 0; border-bottom:1px solid var(--gris-4); font-size:.94rem; color:var(--gris-2);
+}
+.frais-inscription b { font-family:var(--display); color:var(--bleu-mid); font-size:1rem }
+.frais-pieces-titre { font-size:.74rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gris-2); font-weight:700; margin-bottom:8px }
+.frais-pieces { margin:0; padding-left:18px }
+.frais-pieces li { font-size:.9rem; color:var(--gris-2); line-height:1.6; margin-bottom:5px }
+.frais-examens { margin-bottom:22px }
+.frais-pied { font-size:.86rem; color:var(--gris-2); font-style:italic; line-height:1.6 }
+
+@media (max-width:680px) {
+  .frais-grilles, .frais-annexes { grid-template-columns:1fr }
+  .frais-table { overflow-x:auto }
+  .frais-calendrier { width:100% }
+}
+
 /* ===== GOOGLE MAPS ===== */
 .maps-embed {
   margin-top:14px; border-radius:var(--r); overflow:hidden;

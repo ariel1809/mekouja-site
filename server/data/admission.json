@@ -6,7 +6,7 @@
       "titre": "Le concours d'entrée",
       "description": "Obligatoire pour l'entrée en 6e / Form 1 et pour la série scientifique de 2nde C. Il évalue les acquis en mathématiques, en français et en anglais sur des épreuves écrites d'environ 3 heures.",
       "etapes": [
-        "Retirer le dossier d'inscription au concours à l'accueil de l'école ou le demander par e-mail (frais : 5 000 FCFA).",
+        "Retirer le dossier d'inscription au concours à l'accueil de l'école ou le demander par e-mail (frais de concours : 2 500 FCFA).",
         "Déposer le dossier complet au plus tard une semaine avant la date du concours.",
         "Composer le jour du concours — épreuves écrites le matin, durée totale d'environ 3 heures.",
         "Consulter les résultats affichés à l'école et publiés sur cette page sous 10 jours ouvrables.",
@@ -37,10 +37,123 @@
       { "classe": "Primaire (SIL – CM2 / Class 1 – 6)", "voie": "Dossier + test de niveau", "type": "dossier", "pieces": "Bulletins, certificat de scolarité, test lecture et calcul (30 min)", "periode": "Juin – août" },
       { "classe": "6e / Form 1", "voie": "Concours", "type": "concours", "pieces": "Épreuves de mathématiques, français et anglais", "periode": "19 juillet 2026" },
       { "classe": "5e – 3e / Form 2 – 5", "voie": "Étude de dossier", "type": "dossier", "pieces": "Bulletins des 2 dernières années, entretien famille-direction", "periode": "Juin – août" },
-      { "classe": "Filières Techniques (Maçonnerie, Coupe-Couture)", "voie": "Étude de dossier", "type": "dossier", "pieces": "Bulletins, fiche de demande, entretien d'orientation", "periode": "Juin – août" },
+      { "classe": "Filières techniques (CAP : Maçonnerie, Couture, Électricité)", "voie": "Étude de dossier", "type": "dossier", "pieces": "CEP, bulletins, fiche de demande, entretien d'orientation", "periode": "Juin – août" },
+      { "classe": "Second cycle technique (IH, F3, F4, F8)", "voie": "Étude de dossier", "type": "dossier", "pieces": "Relevé BEPC ou CAP, bulletins, entretien d'orientation", "periode": "Juillet – août" },
       { "classe": "2nde C", "voie": "Concours", "type": "concours", "pieces": "Épreuves de mathématiques et sciences physiques", "periode": "19 juillet 2026" },
       { "classe": "2nde A & D", "voie": "Étude de dossier", "type": "dossier", "pieces": "Relevé BEPC / GCE O-Level, bulletins de 3e, entretien", "periode": "Juillet – août" },
       { "classe": "1re & Terminale (toutes séries)", "voie": "Étude de dossier", "type": "dossier", "pieces": "Bulletins, relevé Probatoire le cas échéant, entretien", "periode": "Juillet – août" }
     ]
+  },
+  "frais": {
+    "titre": "Frais de scolarité 2026–2027",
+    "sousTitre": "Montants officiels en FCFA, payables en 3 tranches",
+    "intro": "Voici la grille tarifaire complète pour l'année scolaire 2026–2027. La scolarité se règle en trois tranches ; les frais d'étude de dossier et les frais annexes (matière d'œuvre, laboratoire, examens officiels) s'ajoutent selon le cycle et la classe.",
+    "colonnes": ["Classe", "1ʳᵉ tranche", "2ᵉ tranche", "3ᵉ tranche", "Total"],
+    "calendrier": [
+      { "tranche": "1ʳᵉ tranche", "date": "30 septembre 2026" },
+      { "tranche": "2ᵉ tranche", "date": "30 novembre 2026" },
+      { "tranche": "3ᵉ tranche", "date": "30 janvier 2027" }
+    ],
+    "grilles": [
+      {
+        "cycle": "Maternelle / Nursery",
+        "lignes": [
+          { "classe": "Petite Section (Pre-nursery)", "t1": "45 000", "t2": "25 000", "t3": "10 000", "total": "80 000" },
+          { "classe": "Moyenne Section (Nursery 1)", "t1": "40 000", "t2": "25 000", "t3": "10 000", "total": "75 000" },
+          { "classe": "Grande Section (Nursery 2)", "t1": "40 000", "t2": "25 000", "t3": "10 000", "total": "75 000" }
+        ]
+      },
+      {
+        "cycle": "Primaire / Primary",
+        "lignes": [
+          { "classe": "SIL (Class 1)", "t1": "30 000", "t2": "25 000", "t3": "10 000", "total": "65 000" },
+          { "classe": "CP (Class 2)", "t1": "30 000", "t2": "25 000", "t3": "10 000", "total": "65 000" },
+          { "classe": "CE1 (Class 3)", "t1": "30 000", "t2": "25 000", "t3": "10 000", "total": "65 000" },
+          { "classe": "CE2 (Class 4)", "t1": "30 000", "t2": "25 000", "t3": "10 000", "total": "65 000" },
+          { "classe": "CM1 (Class 5)", "t1": "35 000", "t2": "25 000", "t3": "10 000", "total": "70 000" },
+          { "classe": "CM2 (Class 6)", "t1": "75 000", "t2": "—", "t3": "—", "total": "75 000" }
+        ]
+      },
+      {
+        "cycle": "Secondaire général francophone",
+        "lignes": [
+          { "classe": "6ᵉ · 5ᵉ", "t1": "50 000", "t2": "40 000", "t3": "20 000", "total": "110 000" },
+          { "classe": "4ᵉ", "t1": "50 000", "t2": "40 000", "t3": "30 000", "total": "120 000" },
+          { "classe": "3ᵉ", "t1": "110 000", "t2": "30 000", "t3": "—", "total": "140 000" },
+          { "classe": "2nde A & C", "t1": "70 000", "t2": "50 000", "t3": "20 000", "total": "140 000" },
+          { "classe": "1ʳᵉ A · C · D", "t1": "110 000", "t2": "40 000", "t3": "—", "total": "150 000" },
+          { "classe": "Tle A · C · D", "t1": "110 000", "t2": "50 000", "t3": "—", "total": "160 000" }
+        ]
+      },
+      {
+        "cycle": "Enseignement technique francophone",
+        "lignes": [
+          { "classe": "1ʳᵉ année (CAP)", "t1": "60 000", "t2": "40 000", "t3": "20 000", "total": "120 000" },
+          { "classe": "2ᵉ & 3ᵉ année (CAP)", "t1": "60 000", "t2": "45 000", "t3": "25 000", "total": "130 000" },
+          { "classe": "4ᵉ année (CAP)", "t1": "100 000", "t2": "50 000", "t3": "—", "total": "150 000" },
+          { "classe": "2nde F3 · F4 · IH", "t1": "80 000", "t2": "50 000", "t3": "20 000", "total": "150 000" },
+          { "classe": "2nde F8 (santé)", "t1": "100 000", "t2": "80 000", "t3": "20 000", "total": "200 000" },
+          { "classe": "1ʳᵉ F3 · F4 · IH", "t1": "120 000", "t2": "50 000", "t3": "—", "total": "170 000" },
+          { "classe": "1ʳᵉ F8 (santé)", "t1": "120 000", "t2": "100 000", "t3": "—", "total": "220 000" },
+          { "classe": "Tle F3 · F4 · IH", "t1": "120 000", "t2": "60 000", "t3": "—", "total": "180 000" },
+          { "classe": "Tle F8 (santé)", "t1": "150 000", "t2": "100 000", "t3": "—", "total": "250 000" }
+        ]
+      },
+      {
+        "cycle": "English-speaking general education",
+        "lignes": [
+          { "classe": "Form 1 · 2 · 3", "t1": "60 000", "t2": "40 000", "t3": "20 000", "total": "120 000" },
+          { "classe": "Form 4 Arts", "t1": "60 000", "t2": "45 000", "t3": "20 000", "total": "125 000" },
+          { "classe": "Form 4 Science", "t1": "60 000", "t2": "45 000", "t3": "25 000", "total": "130 000" },
+          { "classe": "Form 5 Arts", "t1": "100 000", "t2": "40 000", "t3": "—", "total": "140 000" },
+          { "classe": "Form 5 Science", "t1": "100 000", "t2": "70 000", "t3": "—", "total": "170 000" },
+          { "classe": "Lower Sixth Arts", "t1": "80 000", "t2": "35 000", "t3": "25 000", "total": "140 000" },
+          { "classe": "Lower Sixth Science", "t1": "90 000", "t2": "50 000", "t3": "20 000", "total": "160 000" },
+          { "classe": "Upper Sixth Arts", "t1": "120 000", "t2": "50 000", "t3": "—", "total": "170 000" },
+          { "classe": "Upper Sixth Science", "t1": "120 000", "t2": "70 000", "t3": "—", "total": "190 000" }
+        ]
+      }
+    ],
+    "etudeDossier": {
+      "titre": "Frais d'étude de dossier",
+      "lignes": [
+        { "niveau": "Maternelle & Primaire", "montant": "15 000 FCFA" },
+        { "niveau": "Secondaire (collège & lycée)", "montant": "20 000 FCFA" }
+      ],
+      "pieces": [
+        "Bulletin de l'année scolaire précédente et matricule unique MINESEC",
+        "Photocopie de l'acte de naissance pour les nouveaux élèves",
+        "1 000 FCFA pour les photos d'identité 4×4 (nouveaux élèves)"
+      ]
+    },
+    "autresFrais": {
+      "titre": "Frais annexes",
+      "colonnes": ["Intitulé", "Classes concernées", "Montant", "Échéance"],
+      "lignes": [
+        { "intitule": "Matière d'œuvre (technicien)", "classes": "1ʳᵉ, 2ᵉ & 3ᵉ année · 2nde technique", "montant": "15 000 FCFA", "delai": "30/09/2026" },
+        { "intitule": "Matière d'œuvre + stage", "classes": "4ᵉ année · 1ʳᵉ & Tle technique", "montant": "30 000 FCFA", "delai": "30/09/2026" },
+        { "intitule": "Laboratoire", "classes": "1ʳᵉ C&D · Tle C&D", "montant": "10 000 FCFA", "delai": "30/09/2026" },
+        { "intitule": "Initiation à l'entrepreneuriat", "classes": "Cycle primaire / autres classes", "montant": "5 000 / 10 000 FCFA", "delai": "30/09/2026" },
+        { "intitule": "Frais de service (infirmerie) & supports pédagogiques", "classes": "CM2, Class 6 et toutes les classes du CBEM", "montant": "10 000 FCFA", "delai": "30/09/2026" }
+      ]
+    },
+    "fraisExamens": {
+      "titre": "Frais de dossier — examens officiels",
+      "colonnes": ["Examen", "Frais fixes", "Frais variables", "Échéance"],
+      "lignes": [
+        { "examen": "C.E.P / F.S.L.C", "fixe": "14 000 FCFA", "variable": "—", "delai": "30/09/2026" },
+        { "examen": "Concours MEKOUJA", "fixe": "2 500 FCFA", "variable": "—", "delai": "30/09/2026" },
+        { "examen": "Concours d'entrée aux lycées", "fixe": "6 000 FCFA", "variable": "—", "delai": "30/09/2026" },
+        { "examen": "B.E.P.C", "fixe": "13 000 FCFA", "variable": "—", "delai": "30/10/2026" },
+        { "examen": "C.A.P", "fixe": "20 000 FCFA", "variable": "—", "delai": "31/10/2026" },
+        { "examen": "Probatoire ESG", "fixe": "21 500 FCFA", "variable": "—", "delai": "31/10/2026" },
+        { "examen": "Probatoire EST", "fixe": "30 500 FCFA", "variable": "—", "delai": "31/10/2026" },
+        { "examen": "Baccalauréat ESG", "fixe": "23 500 FCFA", "variable": "—", "delai": "31/10/2026" },
+        { "examen": "Baccalauréat EST", "fixe": "35 000 FCFA", "variable": "—", "delai": "31/10/2026" },
+        { "examen": "G.C.E. O-Level", "fixe": "21 000 FCFA", "variable": "1 000/matière écrite + 5 000/pratique", "delai": "30/11/2026" },
+        { "examen": "G.C.E. A-Level", "fixe": "23 000 FCFA", "variable": "2 000/matière écrite + 5 000/pratique", "delai": "30/11/2026" }
+      ]
+    },
+    "note": "Tarifs officiels du Complexe Scolaire Bilingue Entrepreneurial MEKOUJA pour l'année 2026–2027. Pour toute précision, contactez le secrétariat au 676 317 608 / 656 543 550."
   }
 }
